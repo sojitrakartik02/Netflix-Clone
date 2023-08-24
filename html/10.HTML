@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="#" onsubmit="fun()" name="f1">
+        Name: <input type="text" id="a1"><br><br>
+        Contact: <input type="tel" id="a2"><br><br>
+        Email: <input type="email" id="a3"><br><br>
+        <input type="submit">
+        <input type="reset">
+    </form>
+
+    <script>
+        function fun() {
+            a = document.f1.a1.value
+            b = document.f1.a2.value
+            c = document.f1.a3.value
+            n = /^[A-z|_]+$/
+            p = /^\d{10}$/
+            e = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+            if (n.test(a)) {
+                if (p.test(b)) {
+                    if (e.test(c)) {
+                        alert("Perfect")
+                    }
+                    else {
+                        alert("Invalid Email")
+                    }
+                }
+                else {
+                    alert("invalid Number")
+                }
+            }
+            else {
+                alert("Invalid Name")
+            }
+        }
+    </script>
+    <div id="carousel">
+    <div id="poster" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row" style="margin: 0px 50px;">
+                    <div class="col-sm-2">
+                        <a href="#">
+                            <div class="card poster">
+                                <img src="poster 1.png" alt="Card image">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-2">
+                        <a href="#">
+                            <div class="card poster">
+                                <img src="poster 2.png" alt="Card image">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-2">
+                        <a href="#">
+                            <div class="card poster">
+                                <img src="poster 3.png" alt="Card image">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-2">
+                        <a href="#">
+                            <div class="card poster">
+                                <img src="poster 4.png" alt="Card image">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-2">
+                        <a href="#">
+                            <div class="card poster">
+                                <img src="poster 5.png" alt="Card image">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-2">
+                        <a href="#">
+                            <div class="card poster">
+                                <img src="poster 6.png" alt="Card image">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row" style="margin: 0px 50px;">
+                    <div class="col-sm-2">
+                        <a href="#">
+                            <div class="card poster">
+                                <img src="poster 7.png" alt="Card image">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-2">
+                        <a href="#">
+                            <div class="card poster">
+                                <img src="poster 8.png" alt="Card image">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-2">
+                        <a href="#">
+                            <div class="card poster">
+                                <img src="poster 9.png" alt="Card image">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-2">
+                        <a href="#">
+                            <div class="card poster">
+                                <img src="poster 10.png" alt="Card image">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-2">
+                        <a href="#">
+                            <div class="card poster">
+                                <img src="poster 11.png" alt="Card image">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-2">
+                        <a href="#">
+                            <div class="card poster">
+                                <img src="poster 12.png" alt="Card image">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row" style="margin: 0px 50px;">
+                    <div class="col-sm-2">
+                        <a href="#">
+                            <div class="card poster">
+                                <img src="poster 12.png" alt="Card image">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-2">
+                        <a href="#">
+                            <div class="card poster">
+                                <img src="poster 14.webp" alt="Card image">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-2">
+                        <a href="#">
+                            <div class="card poster">
+                                <img src="poster 15.webp" alt="Card image">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-2">
+                        <a href="#">
+                            <div class="card poster">
+                                <img src="poster 16.webp" alt="Card image">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-2">
+                        <a href="#">
+                            <div class="card poster">
+                                <img src="poster 17.webp" alt="Card image">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-2">
+                        <a href="#">
+                            <div class="card poster">
+                                <img src="poster 18.webp" alt="Card image">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Left and right controls/icons -->
+
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#poster" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#poster" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+</div>
+</body>
+
+</html>

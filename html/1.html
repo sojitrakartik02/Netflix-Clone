@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="/temp/css/1.css">
+    <title>Netflix India - Watch TV Shows Online, Watch Movies Online</title>
+</head>
+<body>
+    <div class="header">
+        <nav class="navbar-expand-md fixed-top">
+            <div class="nav-logo">
+                <img src="/temp/img/netflix-logo-png-2582.png" alt="">
+            </div>
+            <div class="navbar">
+                <ul class="nav-ul">
+                    <li class="nav-li"><a href="1.html" class="nav-a">Home</a></li>
+                    <li class="nav-li"><a href="webseries.html" class="nav-a">Web Series</a></li>
+                    <li class="nav-li"><a href="movies.html" class="nav-a">Movies</a></li>
+                    <li class="nav-li"><a href="anime.html" class="nav-a">Anime</a></li>
+                    <li class="nav-li"><a href="plan.html" class="nav-a">Plans</a></li>
+                </ul>
+            </div>
+            <div class="nav-btn">
+                <button class="btn-lang dropdown-toggle" data-bs-toggle="dropdown">English</button>
+                <div class="dropdown">
+                    <div class="dropdown-menu dropdown-menu-dark">
+                        <a href="#" class="dropdown-item">Hindi</a>
+                    </div>
+                </div>
+                <button type="button" class="btn-signin" data-bs-toggle="modal" data-bs-target="#sign-in">Sign in</button>
+            </div>
+        </nav>
+        <div class="main-content-1">
+        <div class="main-content">
+            <h1>Unlimited movies, TV<br> shows and more.</h1>
+            <h2>Watch anywhere. Cancel anytime.</h2>
+            <p>Ready to watch? Enter your email to create or restart your membership.</p>
+        </div>
+    </div>
+        <button type="submit" class="btn-submit" data-bs-toggle="modal" data-bs-target="#sign-in">Get Started</button>
+    </div>
+    <br>
+    <hr size="10px" color="gray">
+    <div id="content-1">
+        <div class="content-text">
+            <h1 class="title">Enjoy on your TV.</h1>
+            <h2 class="data-content">Watch on smart TVs, PlayStation, Xbox, Chromecast, <br> Apple TV, Blu-ray players and
+                more.</h2>
+        </div>
+        <div class="content-img">
+            <img src="/temp/img/tv.jpeg" alt="">
+        </div>
+    </div>
+    <br>
+    <hr size="10px" color="gray">
+    <div id="content-2">
+        <div class="content2-img">
+            <img src="/temp/img/ad.jpeg" alt="">
+        </div>
+        <div class="content2-text">
+            <h1 class="title2">Download your shows<br> to watch offline.</h1>
+            <h2 class="data-content2">Save your favourites easily and always <br> have something to watch.</h2>
+        </div>
+    </div>
+    <br>
+    <hr size="10px" color="gray">
+    <div id="content-3">
+        <div class="content3-text">
+            <h1 class="title3">Create profiles for <br>children.</h1>
+            <h2 class="data-content3">Send children on adventures with <br>their favourite characters in a space
+                <br>made just for them—free with your <br>membership.
+            </h2>
+        </div>
+        <div class="content3-img">
+            <img src="/temp/img/kids.jpeg" alt="">
+        </div>
+    </div>
+    <br>
+    <hr size="10px" color="gray">
+    <footer id="footer">
+        <div class="footer1">
+            <p style="margin-bottom: 35px;">Questions? Call 000-800-919-1694</p>
+            <div class="footer-content">
+                <span>FAQ</span>
+                <span>Help Center</span>
+                <span>Account</span>
+                <span>Media Center</span>
+                <span>Investor Relation</span>
+                <span>Jobs</span>
+                <span>Ways to Watch</span>
+                <span>Terms of Use</span>
+                <span>Privacy</span>
+                <span>Cookie Preferences</span>
+                <span>Corporate Information</span>
+                <span>Contact Us</span>
+                <span>Speed Test</span>
+                <span>Legal Notices</span>
+                <span>Only On Netflix</span>
+            </div>
+            <p style="margin-top: 35px;">Netflix India</p>
+        </div>
+    </footer>
+
+
+    <div class="modal" id="sign-in">
+        <div class="modal-dialog modal-dialog-centered modal-lg" >
+            <div class="modal-content" style="background-image: linear-gradient(to bottom,black);" >
+                <div class="modal-header">
+                    <h3>Sign-in Form</h3>
+                </div>
+                <div class="modal-body">
+                    <form action="" onsubmit="fun()" name="f1">
+                        Name: <input type="text" id="a1"><br><br>
+                        Contact: <input type="tel" id="a2"><br><br>
+                        Email: <input type="email" id="a3"><br><br>
+                        <input type="submit">
+                        <input type="reset">
+                    </form>
+                
+                    <!-- <script>
+                        function fun() {
+                            a = document.f1.a1.value
+                            b = document.f1.a2.value
+                            c = document.f1.a3.value
+                            n = /^[A-z|_]+$/
+                            p = /^\d{10}$/
+                            e = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+                            if (n.test(a)) {
+                                if (p.test(b)) {
+                                    if (e.test(c)) {
+                                        alert("Perfect")
+                                    }
+                                    else {
+                                        alert("Invalid Email")
+                                    }
+                                }
+                                else {
+                                    alert("invalid Number")
+                                }
+                            }
+                            else {
+                                alert("Invalid Name")
+                            }
+                        }
+                    </script> -->
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
